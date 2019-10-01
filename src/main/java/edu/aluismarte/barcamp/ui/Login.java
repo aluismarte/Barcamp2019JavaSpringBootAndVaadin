@@ -16,6 +16,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 @SuppressWarnings("SpringJavaAutowiredMembersInspection")
 public class Login extends VerticalLayout { // extends PolymerTemplate<Login.LoginModel>
 
+    // Adicionar la versión flotante en el login para mostrar como se pasan los parámetros
+
     @Autowired
     private UserRepository userRepository;
 
