@@ -19,7 +19,7 @@ public class Login extends VerticalLayout { // extends PolymerTemplate<Login.Log
     // Adicionar la versión flotante en el login para mostrar como se pasan los parámetros
 
     @Autowired
-    private UserRepository userRepository;
+    private UserRepository userRepository; // No hagan esto, es una demostración, deben crear los servicios y hacer una instancia.
 
     private LoginListener loginListener;
 
