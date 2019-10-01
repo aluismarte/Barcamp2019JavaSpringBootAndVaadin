@@ -1,0 +1,138 @@
+<dom-module id="login-template">
+    <template>
+        <style>
+            :host {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #9053c7;
+                background: -webkit-linear-gradient(-135deg, #c850c0, #4158d0);
+                background: -o-linear-gradient(-135deg, #c850c0, #4158d0);
+                background: -moz-linear-gradient(-135deg, #c850c0, #4158d0);
+                background: linear-gradient(-135deg, #c850c0, #4158d0);
+            }
+
+            .container {
+                width: 80%;
+            }
+
+            input {
+                width: 100%;
+                padding: 12px 0 12px 8px;
+                margin-bottom: 10px;
+                border-radius: 10px;
+                border: 2px solid transparent;
+                text-align: left;
+                outline: none;
+                font-size: 18px;
+                transition: border .2s, background-color .2s;
+            }
+
+            form .field {
+                background-color: #ECF0F1;
+            }
+
+            form .field:focus {
+                border: 2px solid #3498DB;
+            }
+
+            form .btn {
+                background-color: #3498DB;
+                color: #fff;
+                line-height: 25px;
+                text-align: center;
+                cursor: pointer;
+            }
+
+            form .btn:hover, .btn:active {
+                background-color: #1F78B4;
+                border: 2px solid #1F78B4;
+            }
+
+            form .title {
+                font-size: 22px;
+                text-align: center;
+            }
+
+            .pass-link a:link, a:visited {
+                font-size: 12px;
+                color: #777;
+            }
+
+            .wrapper {
+                width: 550px;
+                background: #fff;
+                border-radius: 10px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            @media (max-width: 768px) {
+                .wrapper {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+
+                @media (max-width: 576px) {
+                    .wrapper {
+                        padding-left: 15px;
+                        padding-right: 15px;
+                    }
+                }
+            }
+        </style>
+        <div class="wrapper">
+            <div class="container">
+                <form>
+                    <span class="title">Username</span>
+                    <div>
+                        <input autofocus class="field" id="user_login" on-keydown="moveCursorPassword" type="text">
+                    </div>
+                    <span class="title">Password</span>
+                    <div>
+                        <input autocomplete="off" class="field" id="password_login" on-keydown="checkForEnter"
+                               type="password">
+                    </div>
+                    <input class="btn" id="btnLogin" on-click="loginClick" type="button" value="login">
+                    <p class="title"><a href="#" id="lost_password" on-click="lostPasswordClick">Lost your password?</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </template>
+
+    <script>
+        class LoginTemplate extends Polymer.Element {
+            static get is() {
+                return 'login-template'
+            }
+
+            ready() {
+                super.ready();
+            }
+
+            // noinspection JSUnusedGlobalSymbols
+            moveCursorPassword(event) {
+                if (event.keyCode === 13) {
+                    this.$.password_login.focus();
+                }
+            }
+
+            // noinspection JSUnusedGlobalSymbols
+            checkForEnter(event) {
+                if (event.keyCode === 13) {
+                    this.$.btnLogin.click();
+                } else if (event.keyCode === 38) {
+                    this.$.user_login.focus();
+                }
+            }
+        }
+
+        customElements.define(LoginTemplate.is, LoginTemplate);
+    </script>
+</dom-module>
+
