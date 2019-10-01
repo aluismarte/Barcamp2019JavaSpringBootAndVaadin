@@ -1,6 +1,7 @@
 package edu.aluismarte.barcamp.ui;
 
-import com.vaadin.flow.component.orderedlayout.VerticalLayout;
+import com.vaadin.flow.component.dialog.Dialog;
+import com.vaadin.flow.component.html.Label;
 import com.vaadin.flow.templatemodel.TemplateModel;
 import edu.aluismarte.barcamp.repository.UserRepository;
 import edu.aluismarte.barcamp.utils.Constants;
@@ -14,7 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 //@Tag("login-template")
 //@HtmlImport("login/login-template.html")
 @SuppressWarnings("SpringJavaAutowiredMembersInspection")
-public class Login extends VerticalLayout { // extends PolymerTemplate<Login.LoginModel>
+public class Login extends Dialog { // extends PolymerTemplate<Login.LoginModel>
 
     // Adicionar la versión flotante en el login para mostrar como se pasan los parámetros
 
@@ -24,7 +25,10 @@ public class Login extends VerticalLayout { // extends PolymerTemplate<Login.Log
     private LoginListener loginListener;
 
     public Login() {
+        setWidth("400px");
+        setHeight("400px");
         Constants.get().autoWiredClass(this);
+        add(new Label("Hola Vaadin con el login"));
     }
 
     public void setLoginListener(LoginListener loginListener) {

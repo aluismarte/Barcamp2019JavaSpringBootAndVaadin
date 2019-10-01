@@ -35,7 +35,8 @@ public class JavaSpringBootVaadinUI extends VerticalLayout implements RouterLayo
         } else {
             Login login = new Login();
             login.setLoginListener(this::startApp);
-            add(login);
+            login.open();
+//            add(login); // Caso con polymer
         }
     }
 
