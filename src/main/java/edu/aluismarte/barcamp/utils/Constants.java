@@ -16,6 +16,8 @@ public class Constants {
 
     private static volatile Constants instance = null;
 
+    public static final String SYSTEM = "system";
+
     public final String VERSION = new BufferedReader(new InputStreamReader(getClass().getResourceAsStream("/version"))).lines().collect(Collectors.joining());
 
     private ConfigurableApplicationContext applicationContext;
