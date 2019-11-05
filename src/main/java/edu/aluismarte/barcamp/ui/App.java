@@ -1,16 +1,16 @@
 package edu.aluismarte.barcamp.ui;
 
-import com.vaadin.flow.component.html.Label;
-import com.vaadin.flow.component.orderedlayout.VerticalLayout;
+import com.vaadin.flow.component.applayout.AppLayout;
+import com.vaadin.flow.router.Route;
 
 /**
  * Base de la app para mostrar la data.
- *
+ * <p>
  * Created by aluis on 9/30/19.
  */
-public class App extends VerticalLayout {
+@Route("app")
+public class App extends AppLayout {
 
     public App() {
-        add(new Label("Hello app!"));
     }
 }
