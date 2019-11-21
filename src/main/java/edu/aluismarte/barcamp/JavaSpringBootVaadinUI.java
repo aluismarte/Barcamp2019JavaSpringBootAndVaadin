@@ -16,6 +16,5 @@ import com.vaadin.flow.router.Route;
 public class JavaSpringBootVaadinUI extends VerticalLayout {
 
     public JavaSpringBootVaadinUI() {
-        // Ejemplo para crear componentes.
     }
 }
