@@ -12,8 +12,8 @@ import com.vaadin.flow.router.Route;
  */
 @Push
 @Route("")
-@BodySize(height = "100vh", width = "100vw")
-@Viewport("width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes")
+@BodySize(height = "100vh", width = "100vw") // Response
+@Viewport("width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes") // Response
 public class JavaSpringBootVaadinUI extends VerticalLayout {
 
     public JavaSpringBootVaadinUI() {
