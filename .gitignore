@@ -9,6 +9,7 @@ bin/
 /Data
 *.mv.db
 /data/
+node_modules/
 
 # IDE
 out/

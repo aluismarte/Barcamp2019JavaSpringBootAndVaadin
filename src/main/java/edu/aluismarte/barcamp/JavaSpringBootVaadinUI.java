@@ -1,5 +1,6 @@
 package edu.aluismarte.barcamp;
 
+import com.vaadin.flow.component.Text;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.page.BodySize;
 import com.vaadin.flow.component.page.Push;
@@ -16,5 +17,6 @@ import com.vaadin.flow.router.Route;
 public class JavaSpringBootVaadinUI extends VerticalLayout {
 
     public JavaSpringBootVaadinUI() {
+        add(new Text("Hola Vaadin"));
     }
 }
