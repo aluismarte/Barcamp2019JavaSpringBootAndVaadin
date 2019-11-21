@@ -19,9 +19,9 @@ import java.io.UncheckedIOException;
 @Route("simple")
 @JsModule("@google/model-viewer")
 @NpmPackage(value = "@google/model-viewer", version = "0.7.2")
-public class SimpleAdd extends VerticalLayout {
+public class Simple extends VerticalLayout {
 
-    public SimpleAdd() {
+    public Simple() {
         File model = new File("./models/Horse.glb");
         Element modelViewer = new Element("model-viewer");
         modelViewer.setAttribute("camera-controls", true);

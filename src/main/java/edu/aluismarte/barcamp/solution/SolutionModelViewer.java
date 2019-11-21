@@ -16,9 +16,9 @@ import java.io.*;
 @Tag("model-viewer")
 @JsModule("@google/model-viewer")
 @NpmPackage(value = "@google/model-viewer", version = "0.7.2")
-public class VaadinModelViewer extends Component implements HasSize {
+public class SolutionModelViewer extends Component implements HasSize {
 
-    public VaadinModelViewer() {
+    public SolutionModelViewer() {
         getElement().setAttribute("camera-controls", true);
     }
 
