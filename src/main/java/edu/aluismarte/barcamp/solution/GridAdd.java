@@ -34,5 +34,6 @@ public class GridAdd extends VerticalLayout {
         SplitLayout splitLayout = new SplitLayout(modelViewer, grid);
         splitLayout.setSizeFull();
         add(splitLayout);
+        setSizeFull();
     }
 }

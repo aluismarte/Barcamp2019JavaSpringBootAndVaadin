@@ -9,6 +9,7 @@ bin/
 /Data
 *.mv.db
 /data/
+webpack.generated.js
 node_modules/
 
 # IDE
