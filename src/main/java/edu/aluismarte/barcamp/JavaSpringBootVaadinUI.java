@@ -10,7 +10,7 @@ import com.vaadin.flow.router.Route;
 /**
  * Created by aluis on 9/30/19.
  */
-@Push
+@Push // Hacer que la UI responda por eventos al server
 @Route("")
 @BodySize(height = "100vh", width = "100vw") // Response
 @Viewport("width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes") // Response
