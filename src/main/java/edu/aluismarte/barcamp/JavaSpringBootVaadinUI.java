@@ -10,6 +10,7 @@ import com.vaadin.flow.router.Route;
 /**
  * Created by aluis on 9/30/19.
  */
+//@PWA(name = "View Model Componente like native vaadin componente", shortName = "View Model Vaadin") // Permite hacer el concepto de Progress Web Application
 @Push // Hacer que la UI responda por eventos al server
 @Route("")
 @BodySize(height = "100vh", width = "100vw") // Response
