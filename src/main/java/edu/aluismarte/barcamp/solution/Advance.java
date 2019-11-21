@@ -8,8 +8,11 @@ import com.vaadin.flow.component.page.Viewport;
 import com.vaadin.flow.component.splitlayout.SplitLayout;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.server.PWA;
+import edu.aluismarte.barcamp.solution.component.SolutionModelViewer;
 
 import java.io.File;
+import java.util.Arrays;
+import java.util.Comparator;
 
 /**
  * Created by aluis on 11/20/19.
@@ -18,7 +21,8 @@ import java.io.File;
 @Route("advance")
 @BodySize(height = "100vh", width = "100vw") // Responsive
 @Viewport("width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes") // Responsive
-@PWA(name = "View Model Componente like native vaadin componente", shortName = "View Model Vaadin") // Permite hacer el concepto de Progress Web Application
+// Permite hacer el concepto de Progress Web Application
+@PWA(name = "View Model Componente like native vaadin componente", shortName = "View Model Vaadin")
 public class Advance extends VerticalLayout {
 
     public Advance() {
@@ -27,6 +31,7 @@ public class Advance extends VerticalLayout {
         if (files == null || files.length == 0) {
             return;
         }
+        Arrays.sort(files, Comparator.comparing(File::getName));
         SolutionModelViewer modelViewer = new SolutionModelViewer();
         modelViewer.setSizeFull();
         modelViewer.setSrc(files[0]);
