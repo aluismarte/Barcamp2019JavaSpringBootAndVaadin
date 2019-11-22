@@ -1,4 +1,4 @@
-package edu.aluismarte.barcamp.solution;
+package edu.alsjava.barcamp.solution;
 
 import com.vaadin.flow.component.grid.Grid;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
@@ -8,7 +8,7 @@ import com.vaadin.flow.component.page.Viewport;
 import com.vaadin.flow.component.splitlayout.SplitLayout;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.server.PWA;
-import edu.aluismarte.barcamp.solution.component.SolutionModelViewer;
+import edu.alsjava.barcamp.solution.component.SolutionModelViewer;
 
 import java.io.File;
 import java.util.Arrays;

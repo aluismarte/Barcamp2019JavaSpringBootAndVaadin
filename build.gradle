@@ -5,7 +5,7 @@ plugins {
     id 'io.spring.dependency-management' version '1.0.8.RELEASE'
 }
 
-group 'edu.aluismarte.barcamp'
+group 'edu.alsjava.barcamp'
 version new File("$rootProject.projectDir/src/main/resources/version".toString()).text.trim()
 
 sourceCompatibility = 1.8

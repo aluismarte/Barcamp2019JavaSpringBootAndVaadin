@@ -1,4 +1,4 @@
-package edu.aluismarte.barcamp;
+package edu.alsjava.barcamp;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

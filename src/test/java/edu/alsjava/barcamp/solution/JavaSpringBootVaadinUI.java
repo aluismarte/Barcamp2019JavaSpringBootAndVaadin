@@ -1,4 +1,4 @@
-package edu.aluismarte.barcamp.solution;
+package edu.alsjava.barcamp.solution;
 
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.notification.Notification;

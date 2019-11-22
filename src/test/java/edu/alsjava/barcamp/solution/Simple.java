@@ -1,4 +1,4 @@
-package edu.aluismarte.barcamp.solution;
+package edu.alsjava.barcamp.solution;
 
 import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.dependency.NpmPackage;

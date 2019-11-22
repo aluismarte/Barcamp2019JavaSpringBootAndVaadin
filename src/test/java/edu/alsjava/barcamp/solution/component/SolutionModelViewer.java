@@ -1,4 +1,4 @@
-package edu.aluismarte.barcamp.solution.component;
+package edu.alsjava.barcamp.solution.component;
 
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.HasSize;
