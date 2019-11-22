@@ -1,4 +1,4 @@
-package edu.aluismarte.barcamp;
+package edu.aluismarte.barcamp.solution;
 
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.notification.Notification;
@@ -7,6 +7,8 @@ import com.vaadin.flow.component.textfield.TextField;
 import com.vaadin.flow.router.Route;
 
 /**
+ * Ejemplo basico de vaadin.
+ * <p>
  * Created by aluis on 9/30/19.
  */
 @Route("")
