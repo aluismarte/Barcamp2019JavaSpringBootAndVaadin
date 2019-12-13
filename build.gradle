@@ -24,8 +24,8 @@ configurations {
 
 ext {
     junit_jupiter_version = '5.5.2'
-    spring_boot_version = '2.2.1.RELEASE'
-    vaadin_version = '14.0.13'
+    spring_boot_version = '2.2.2.RELEASE'
+    vaadin_version = '14.1.2'
     lombok_version = '1.18.10'
 }
 
